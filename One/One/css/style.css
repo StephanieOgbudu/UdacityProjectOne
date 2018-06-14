@@ -1,0 +1,177 @@
+body, div, section
+{
+	padding: 0;
+	margin: 0;
+	color: #2d3c49;
+	font-weight: normal;
+}
+.content
+{
+	padding: 100px;
+}
+.container
+{
+	display: flex;
+	flex-direction: row;
+}
+.left
+{
+	flex-grow: 1;
+	padding-top: 240px;
+	width: 20%;
+	color: #686868;
+	float: left;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	text-align: center;
+}
+.item
+{
+	height: 150px;
+	width: 150px;
+	margin: 0px auto;
+}
+.one
+{
+	background-color: #02b3e4;
+}
+.two
+{
+	background-color: #2d3c49;
+}
+.three
+{
+	background-color: #7d97ad;
+}
+.right
+{
+	width: 80%;
+	float: right;
+}
+.header
+{
+	display: flex;
+	flex-direction: row;
+}
+.image
+{
+	float: left;
+}
+.image img
+{
+	width: 100%;
+	height: auto;
+}
+.topic
+{
+	flex-grow: 1;
+	justify-content: flex-end;
+	text-align: right;
+}
+hr
+{
+	background-color:#7d97ad;
+	height: 5px;1
+}
+.pic
+{
+	padding-top: 20px;
+}
+.bottom
+{
+	display: flex;
+	flex-direction: column;
+}
+.connect
+{
+	display: flex;
+	flex-direction: row;
+}
+.applify img
+{
+	height: auto;
+	width: 80%;
+	overflow:hidden;
+}
+.applify
+{
+	flex-grow: 1;
+	text-align: center;
+}
+
+@media screen and (max-width: 770px)
+{
+	.content
+	{
+		padding: 0px;
+	}
+	.container
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.right, .left
+	{
+		width: 100%;
+		padding:10px;
+	}
+	.left
+	{
+		padding-top: 20px;
+		text-align: center;
+	}
+	.item
+	{
+		width: 100%;
+	}
+	.connect
+	{
+		flex-direction: column;
+	}
+	.applify img
+	{
+		padding-right: 0px;
+	}
+}
+
+@media screen and (max-width: 900px)
+{
+	.content
+	{
+		padding: 10px;
+	}
+	.container
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.right, .left
+	{
+		width: 100%;
+		padding:10px;
+	}
+	.left
+	{
+		padding-top: 20px;
+		text-align: center;
+	}
+	.item
+	{
+		width: 100%;
+	}
+	.connect
+	{
+		flex-direction: column;
+	}
+	.applify img
+	{
+		padding-right: 0px;
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	.content
+	{
+		padding: 50px;
+	}
+}
